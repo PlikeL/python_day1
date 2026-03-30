@@ -334,11 +334,113 @@ print('睡觉' in list[6])# True"""
 #     print('')
 
 #输出一个数，判断这个数是否为质数
-num = int(input('请输入一个整数：'))
-if num > 1:
-    for i in range(2, num):
-        if num % i == 0:
-            print(f'{num} 不是质数')
-            break
-    else:
-        print(f'{num} 是质数')
+# num = int(input('请输入一个整数：'))
+# if num > 1:
+#     for i in range(2, num):
+#         if num % i == 0:
+#             print(f'{num} 不是质数')
+#             break
+#     else:
+#         print(f'{num} 是质数')
+
+
+# num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(num [2])
+# print(num[2:5])
+# print(num[:])
+# print(num[::2])
+# print(num[::-2])
+
+# heros = ['钢铁侠', '美国队长', '雷神', '绿巨人', '黑寡妇']
+# heros.append('鹰眼')#只能添加一个元素
+# print(heros)
+
+# heros.extend(['蜘蛛侠', '奇异博士'])#可以添加多个元素
+# print(heros)
+
+# heros[3:3] = ['蚁人', '黄蜂女']#指定位置添加多个元素
+# print(heros)
+
+# heros[len(heros):] = ['灭霸']#指定位置添加一个元素
+# print(heros)
+
+# heros.extend(['蜘蛛侠'])
+# print(heros)
+
+# num = [1, 3, 3, 5, 7]
+# num.insert(1, 2)
+# print(num)
+# num.insert(5,6)
+# print(num)
+# num.insert(len(num) - 1, 9)
+# print(num)
+# num.remove(3)#删除指定元素，比如num = [1, 3, 5, 7]，num.remove(3)后num变成[1, 5, 7]
+# print(num)
+# # num.remove(5:7)#只能删除一个元素，不能删除范围元素和多个元素
+# # print(num)
+# num.pop(2)#默认删除最后一个元素，也可以指定位置删除，比如num = [1, 5, 7]，
+# #num.pop()后num变成[1, 5]，num.pop(0)后num变成[5],这是元素下标，不是元素值
+# print(num)
+
+# num.clear()# num.clear()清空列表，num变成[]
+# print(num)
+# heros = ['钢铁侠', '美国队长', '雷神', '绿巨人', '黑寡妇']
+# heros[2] = '黎珍珍'#单个替换
+# print(heros)
+# heros[3:5] = '爱你'#如果只有一个字符串，就会把字符串分开
+# print(heros)
+# heros[3:5] = '爱你', '恨你'#如果只有一个字符串，就会把字符串分开
+# print(heros)
+# nums = ['钢铁侠', '美国队长', '雷神', '绿巨人', '黑寡妇']
+# nums = [3, 1, 2, 3, 9, 3, 6, 5]
+# nums.sort()#从小到大排序
+# print(nums)
+# nums.reverse()#从大到小排序
+# print(nums)
+
+# nums.sort(reverse=True)
+# print(nums)
+# print(nums.count(3))#查询有多少个3
+# print(nums.index(3))#查找指定元素的索引值
+# print(nums.remove(nums.index(3)))
+# # nums[nums.index(3)] = 5
+# print(nums)
+
+# num = nums.index(3,1,5)           #list.index(value, start, end) 是一个函数 / 方法，
+# 调用必须用小括号 ()，不能用中括号 []（中括号是取值 / 索引用的）
+# print(num)
+
+# nums = [3, 1, 2, 3, 9, 3, 6, 5]
+# num = nums.copy()
+# num2 = nums[:3]
+# print(num)
+# print(num2)
+
+# m = [1, 2, 3]
+# n = [4, 5, 6]
+# print(f'{m + n}')#列表加法
+# print(f'{m * 3}')#列表乘法
+
+# x = [[1, 2, 3], [4, 5, 6],[7, 8, 9]]
+# print(x)
+
+# for i in x:
+#     for n in i:
+#         print(n, end=' ')
+#     print()
+
+# print(x[0][0])
+# x = [0] * 3
+# for i in range(3):
+#     x[i] = [0] * 3
+# print(x)
+
+# x = [[0] * 3] * 3
+# y = [[0] * 3] * 3
+# print(x is y)
+# print(x)
+
+i = int(input('亲输入一个数：'))
+while i <= 3:
+    print('***')
+    i += 1
